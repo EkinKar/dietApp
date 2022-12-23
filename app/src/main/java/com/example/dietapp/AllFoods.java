@@ -8,4 +8,7 @@ public class AllFoods extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_foods);
     }
+    public void deneme(){
+        
+    }
 }
