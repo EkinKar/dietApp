@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DietApp</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_to_diet_app">WELCOME TO DIET APP</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="surname">Surname</string>
+    <string name="name">Name</string>
+</resources>
