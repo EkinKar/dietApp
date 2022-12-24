@@ -7,15 +7,13 @@
 
     <TextView
         android:id="@+id/textMyDietPlans"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="100dp"
         android:layout_marginBottom="60dp"
         android:text="My Diet Plans"
         android:textAlignment="center"
-        android:textColor="#5163CA"
+        android:textColor="#009A7E"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/BtnPersonalizedPlan"
@@ -23,54 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/BtnPersonalizedPlan"
-        android:layout_width="350dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:text="Personalized Plan"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorLink="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/BtnMyPlan1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMyDietPlans" />
-
-    <Button
-        android:id="@+id/BtnMyPlan1"
-        android:layout_width="350dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:text="My Plan 1"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/BtnMyPlan2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnPersonalizedPlan" />
-
-    <Button
-        android:id="@+id/BtnMyPlan2"
-        android:layout_width="350dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="50dp"
-        android:text="My Plan 2"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="300dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="getResultPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnMyPlan1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:src="@drawable/personalized_plan_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

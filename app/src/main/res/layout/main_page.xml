@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/calculate_bmi" />
+        android:src="@drawable/calculate_bmi_btn" />
 
     <ImageButton
         android:id="@+id/BtnMyDietListMainPage"
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnBMIMainPage"
-        app:srcCompat="@drawable/my_diet_list" />
+        android:src="@drawable/my_diet_list_btn" />
 
 
     <ImageButton
@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnMyDietListMainPage"
-        app:srcCompat="@drawable/creat_diet_list" />
+        android:src="@drawable/creat_diet_list_btn" />
 
     <ImageButton
         android:id="@+id/BtnBlogsMainPage"
@@ -72,7 +72,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnCreatDietListMainPage"
-        app:srcCompat="@drawable/blogs" />
+        android:src="@drawable/blogs_btn" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="88dp"
+        android:text="Good Morning!"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BtnBMIMainPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

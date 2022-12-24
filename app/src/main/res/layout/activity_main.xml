@@ -13,19 +13,17 @@
         android:id="@+id/BtnSignInMainPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="430dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="46dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="signInPage"
         app:layout_constraintBottom_toTopOf="@+id/BtnSignUpMainPage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sign_in"
-        android:onClick="signInPage"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:src="@drawable/sign_in_btn" />
 
     <ImageButton
         android:id="@+id/BtnSignUpMainPage"
@@ -34,14 +32,31 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="signUpPage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnSignInMainPage"
-        app:srcCompat="@drawable/sign_up"
-        android:onClick="signUpPage"/>
+        android:src="@drawable/sign_up_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
+        android:text="WELCOME TO DIET APP"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/BtnSignInMainPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
