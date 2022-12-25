@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="60dp"
         android:text="BLOGS"
         android:textAlignment="center"
         android:textColor="#009A7E"
@@ -29,101 +29,53 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView34"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/sign_up_btn" />
+                android:id="@+id/blogs4"
+                android:layout_width="319dp"
+                android:layout_height="877dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/clever_sleep"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="30dp" />
 
             <ImageView
-                android:id="@+id/imageView35"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
+                android:id="@+id/blogs1"
+                android:layout_width="319dp"
+                android:layout_height="877dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/healty_diet"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="30dp" />
 
             <ImageView
-                android:id="@+id/imageView36"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
+                android:id="@+id/blogs2"
+                android:layout_width="319dp"
+                android:layout_height="877dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/exercises"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="30dp" />
 
             <ImageView
-                android:id="@+id/imageView37"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
+                android:id="@+id/blogs3"
+                android:layout_width="319dp"
+                android:layout_height="877dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/portion_control"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="30dp" />
 
-            <ImageView
-                android:id="@+id/imageView38"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView40"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView41"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView30"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView32"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView33"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView28"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView29"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView27"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
-
-            <ImageView
-                android:id="@+id/imageView26"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sign_up_btn" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

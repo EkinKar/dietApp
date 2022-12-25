@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnMyDietListMainPage"
-        android:src="@drawable/creat_diet_list_btn" />
+        android:src="@drawable/create_diet_list_btn" />
 
     <ImageButton
         android:id="@+id/BtnBlogsMainPage"
