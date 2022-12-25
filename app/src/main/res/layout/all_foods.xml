@@ -8,47 +8,23 @@
     android:orientation="vertical"
     tools:context=".ShowDietPlan">
 
-    <EditText
-        android:id="@+id/textView7"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="70dp"
-        android:hint="My Plan"
-        android:textAlignment="center"
-        android:textColor="#009A7E"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <ListView
+            android:id="@+id/listViewFoods"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout="@layout/food_item_layout" />
 
-            <TextView
-                android:id="@+id/textFoodMyPlan"
-                android:layout_width="185dp"
-                android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:text="Egg"
-                android:textColor="#035A37"
-                android:textSize="24dp"
-                tools:layout_editor_absoluteX="66dp"
-                tools:layout_editor_absoluteY="243dp" />
+    </LinearLayout>
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="185dp"
-                android:layout_height="match_parent"
-                android:textAlignment="center"
-                tools:layout_editor_absoluteX="219dp"
-                tools:layout_editor_absoluteY="241dp" />
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Diet List" />
 
 </LinearLayout>

@@ -46,7 +46,6 @@
         <activity android:name=".DietLists" />
         <activity android:name=".AllFoods" />
         <activity android:name=".Blogs" />
-
     </application>
 
 </manifest>

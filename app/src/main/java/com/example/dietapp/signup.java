@@ -54,7 +54,7 @@ public class signup extends Activity {
                             if(task.isSuccessful()){
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 String uid = user.getUid();
-                                usersRef.child(uid).setValue(name);
+                                usersRef.child(uid).child("name").setValue(name);
                                 UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
                                         .setDisplayName(name)
                                         .build();
