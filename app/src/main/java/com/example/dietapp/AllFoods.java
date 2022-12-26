@@ -58,6 +58,7 @@ public class AllFoods extends AppCompatActivity {
                     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                         food.setSelected(isChecked);
                         if (isChecked) {
+                            food.setTotalCalories();
                             selectedFoods.add(food);
                         } else {
                             selectedFoods.remove(food);

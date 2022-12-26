@@ -45,7 +45,7 @@ public class DietLists extends Activity {
 
     public void personalizedDiet(View v) {
         if (mDietsExist) {
-            startActivity(new Intent(DietLists.this, CustomDiet.class));
+            startActivity(new Intent(DietLists.this, ShowDietPlan.class));
         } else {
             Toast.makeText(DietLists.this, "You didn't create a diet plan yet.", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(DietLists.this, AllFoods.class));

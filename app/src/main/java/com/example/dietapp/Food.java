@@ -3,8 +3,18 @@ package com.example.dietapp;
 public class Food {
     private String name;
     private int calories;
-    private int amount;
+    private int amount = 1;
     private boolean selected;
+
+    public int getTotalCalories() {
+        return totalCalories;
+    }
+
+    public void setTotalCalories() {
+        this.totalCalories = calories * amount;
+    }
+
+    private int totalCalories;
 
     public Food() {
     }
