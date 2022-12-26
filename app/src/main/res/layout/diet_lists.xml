@@ -29,7 +29,6 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#00FFFFFF"
-        android:onClick="getResultPage"
         android:src="@drawable/personalized_plan_btn"
         app:layout_constraintBottom_toTopOf="@+id/BtnMyPlan1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +46,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnPersonalizedPlan"
-        app:srcCompat="@drawable/my_plan_1_btn" />
+        android:src="@drawable/my_plan_1_btn"
+        android:onClick="personalizedDiet"/>
 
     <ImageButton
         android:id="@+id/BtnMyPlan2"
@@ -60,6 +60,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnMyPlan1"
-        app:srcCompat="@drawable/my_plan_2_btn" />
+        android:src="@drawable/my_plan_2_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
