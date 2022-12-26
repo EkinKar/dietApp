@@ -13,13 +13,6 @@
         android:theme="@style/Theme.DietApp"
         tools:targetApi="31">
         <activity
-            android:name=".CustomDiet"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ShowDietPlan"
             android:exported="false">
             <meta-data
@@ -51,7 +44,7 @@
         <activity android:name=".MainPage" />
         <activity android:name=".CalculateBmi" />
         <activity android:name=".DietLists" />
-        <activity android:name=".AllFoods" />
+        <activity android:name=".CreateDietList" />
         <activity android:name=".Blogs" />
     </application>
 

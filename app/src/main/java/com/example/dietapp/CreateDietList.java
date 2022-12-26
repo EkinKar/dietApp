@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AllFoods extends AppCompatActivity {
+public class CreateDietList extends AppCompatActivity {
 
     private ListView listViewFoods;
     private List<Food> foodList;
@@ -36,7 +36,7 @@ public class AllFoods extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.all_foods);
+        setContentView(R.layout.activity_create_diet_list);
 
         listViewFoods = findViewById(R.id.listViewFoods);
         foodList = new ArrayList<>();
@@ -114,9 +114,9 @@ public class AllFoods extends AppCompatActivity {
                         @Override
                         public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
                             if (databaseError == null) {
-                                Toast.makeText(AllFoods.this, "Foods saved to database.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(CreateDietList.this, "Foods saved to database.", Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(AllFoods.this, "Error saving foods to database.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(CreateDietList.this, "Error saving foods to database.", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

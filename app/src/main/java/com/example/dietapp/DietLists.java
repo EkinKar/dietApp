@@ -23,8 +23,8 @@ public class DietLists extends Activity {
         setContentView(R.layout.diet_lists);
         mDietsExist = false;
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
         String userId = user.getUid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference userRef = database.getReference("users").child(userId).child("diets");
 
         userRef.addValueEventListener(new ValueEventListener() {
@@ -43,12 +43,12 @@ public class DietLists extends Activity {
         });
     }
 
-    public void personalizedDiet(View v) {
+    public void myDietList(View v) {
         if (mDietsExist) {
             startActivity(new Intent(DietLists.this, ShowDietPlan.class));
         } else {
             Toast.makeText(DietLists.this, "You didn't create a diet plan yet.", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(DietLists.this, AllFoods.class));
+            startActivity(new Intent(DietLists.this, CreateDietList.class));
         }
     }
 }

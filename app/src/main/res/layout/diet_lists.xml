@@ -47,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnPersonalizedPlan"
         android:src="@drawable/my_plan_1_btn"
-        android:onClick="personalizedDiet"/>
+        android:onClick="myDietList"/>
 
     <ImageButton
         android:id="@+id/BtnMyPlan2"
