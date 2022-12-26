@@ -3,13 +3,13 @@ package com.example.dietapp;
 public class Food {
     private String name;
     private int calories;
-    private String amount;
+    private int amount;
     private boolean selected;
 
     public Food() {
     }
 
-    public Food(String name, int calories, String amount, boolean selected) {
+    public Food(String name, int calories, int amount, boolean selected) {
         this.name = name;
         this.calories = calories;
         this.amount = amount;
@@ -24,11 +24,11 @@ public class Food {
         return calories;
     }
 
-    public String getAmount() { // getter for the amount field
+    public int getAmount() { // getter for the amount field
         return amount;
     }
 
-    public void setAmount(String amount) { // setter for the amount field
+    public void setAmount(int amount) { // setter for the amount field
         this.amount = amount;
     }
 

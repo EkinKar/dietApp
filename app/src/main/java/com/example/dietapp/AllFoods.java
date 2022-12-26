@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ListView;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -45,9 +46,13 @@ public class AllFoods extends AppCompatActivity {
                 View view = super.getView(position, convertView, parent);
                 CheckBox checkBoxFood = view.findViewById(R.id.checkBoxFood);
                 TextView textViewFoodName = view.findViewById(R.id.textViewFoodName);
+                NumberPicker numberPickerAmount = view.findViewById(R.id.numberPickerAmount);
                 Food food = foodList.get(position);
                 checkBoxFood.setChecked(food.isSelected());
                 textViewFoodName.setText(food.getName());
+                numberPickerAmount.setMinValue(1);
+                numberPickerAmount.setMaxValue(5);
+                numberPickerAmount.setValue(1);
                 checkBoxFood.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
@@ -59,6 +64,13 @@ public class AllFoods extends AppCompatActivity {
                         }
                     }
                 });
+                numberPickerAmount.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+                    @Override
+                    public void onValueChange(NumberPicker numberPicker, int oldValue, int newValue) {
+                        food.setAmount(newValue);
+                    }
+                });
+
                 return view;
             }
         };
@@ -97,10 +109,16 @@ public class AllFoods extends AppCompatActivity {
                 if (user != null) {
                     String userId = user.getUid();
                     DatabaseReference ref = FirebaseDatabase.getInstance().getReference("users").child(userId).child("diets");
-                    for (Food food : selectedFoods) {
-                        ref.push().setValue(food);
-                    }
-                    Toast.makeText(AllFoods.this, "Selected foods saved to the diet list!", Toast.LENGTH_SHORT).show();
+                    ref.setValue(selectedFoods, new DatabaseReference.CompletionListener() {
+                        @Override
+                        public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
+                            if (databaseError == null) {
+                                Toast.makeText(AllFoods.this, "Foods saved to database.", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(AllFoods.this, "Error saving foods to database.", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
                 }
             }
         });
