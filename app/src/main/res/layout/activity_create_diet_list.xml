@@ -7,6 +7,18 @@
     android:orientation="vertical"
     tools:context=".ShowDietPlan">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Diet List"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="45dp"
+        />
+
     <ListView
         android:id="@+id/listViewFoods"
         android:layout_width="match_parent"
@@ -27,8 +39,15 @@
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/empty_btn"
+            android:text="Save Diet List"
+            android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:text="Save Diet List" />
+            android:textColor="#009A7E"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
