@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blogs_and_list_page"
+    android:orientation="vertical"
+    tools:context=".ShowDietPlan">
+
+    <TextView
+        android:id="@+id/blog2Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="3 Strategies to Maximize Weight Loss Through Portion Control"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/blog4Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/blogText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Like many people who’ve tried to lose weight over the years, there’s a good chance you’ve tried out more than one diet.  Most diets focus on restricting your eating by cutting out things like refined sugars, carbohydrates, fat content, etc. And while reducing your intake of those things can aid in weight loss*, the constant restriction can also make it more challenging to stay dedicated and consistent.  Another practical approach is to allow some of the foods you enjoy most while focusing on portion control instead. Portion control is when you focus on the amount of food you’re eating and adjust it according to your calorie and nutritional goals.  Portion control has become especially challenging over the last several decades. That’s because standard portion sizes — both in restaurants and marketplaces — have increased dramatically since the 1970s. A 2002 study published in the American Journal of Public Health found that recommended and restaurant-served portion sizes increased sharply in the 1980s and have steadily risen in parallel with average body weights in the U.S.  Controlling your portions is helpful if you still want to enjoy certain calorie-dense foods. And thankfully, there are ways to go about it. We rounded up three strategies to maximize your weight loss efforts through portion control. Applying these tips can go a long way toward helping you reach your goals! 1) Use a smaller plate.  From a young age, many of us have been taught to finish everything on our plates. The problem is that plates tend to be large. And those large, platter-like plates we’re accustomed to do not bode well for controlling portion sizes. Consider filling a smaller plate, such as a salad or portion-control plate, with your meal. This will help you be more aware of how much you’re eating. You can always get more if you don’t feel satisfied in the end.  You should also aim to fill half your plate with vegetables, a quarter with lean protein, and the other quarter with a whole grain like brown rice. 2) Use a kitchen scale.  Measuring your portion sizes with a scale can go a long way toward helping you eat the right amount. Digital scales are an excellent investment when you’re learning how proper portion sizes look. Spend some time on the weekend measuring out your portion sizes for food you plan on eating throughout the week. Or, if you would rather, measure the portion sizes ahead of each meal. It won’t take long before you get a solid idea of what the correct portion size looks like. 3) Be mindful when you eat.  We live in a busy world. Too often, you may find yourself scarfing down a meal in front of the TV or ahead of a work meeting. But slowing down and practicing mindful eating works wonders toward eating the correct portion size. Treat your meals like any other important activity by setting time aside in your day to sit down and eat them slowly and mindfully. Pay attention to each bite’s smell, texture, and taste, and listen to the cues your stomach sends your mind as you go. Not only will this help you enjoy the meals more, but it will also establish a connection between your body and brain that will signal you when you’re full, so you stop eating. At Diet-to-Go, we believe that healthy eating doesn’t have to be restrictive or miserable. We approach weight loss with common sense, meaning that portion size, nutritional value, and taste are at the forefront of every meal our renowned chefs prepare.  Diet-to-Go customers will be the first to tell you that one of the most valuable things our program taught them was how much food they should be eating. Combine that portion control knowledge with the No. 1-rated taste, the convenience of meal delivery, and our team of experts standing by to create a personalized plan for you, and you have a recipe for success.* "
+                android:textColor="#044E30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

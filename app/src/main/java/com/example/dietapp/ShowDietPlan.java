@@ -19,6 +19,7 @@ public class ShowDietPlan extends AppCompatActivity {
     private DatabaseReference reference;
     private TextView textFoodPersonalized;
     private TextView textAmountPersonalized;
+    private TextView textTotalCal;
     int totalCal = 0;
 
     @Override
@@ -31,6 +32,7 @@ public class ShowDietPlan extends AppCompatActivity {
         reference = database.getReference("users/" + userId + "/diets");
         textFoodPersonalized = findViewById(R.id.textFoodPersonalized);
         textAmountPersonalized = findViewById(R.id.textAmountPersonalized);
+        textTotalCal = findViewById(R.id.textTotalCall);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -44,6 +46,7 @@ public class ShowDietPlan extends AppCompatActivity {
                 }
                 textFoodPersonalized.setText(sbFood.toString());
                 textAmountPersonalized.setText(sbAmount.toString());
+                textTotalCal.setText("Total Calories: " + String.valueOf(totalCal));
                 System.out.println(totalCal);
             }
 

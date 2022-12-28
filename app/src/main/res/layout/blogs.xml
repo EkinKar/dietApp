@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/blogs4"
+                android:id="@+id/blogs1"
                 android:layout_width="319dp"
                 android:layout_height="877dp"
                 android:layout_gravity="center"
@@ -42,18 +42,6 @@
                 tools:layout_editor_absoluteY="30dp"
                 android:onClick="goBlog1"/>
 
-            <ImageView
-                android:id="@+id/blogs1"
-                android:layout_width="319dp"
-                android:layout_height="877dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/healty_diet"
-                tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="30dp" />
 
             <ImageView
                 android:id="@+id/blogs2"
@@ -64,9 +52,10 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/exercises"
+                android:background="@drawable/healty_diet"
                 tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="30dp" />
+                tools:layout_editor_absoluteY="30dp"
+                android:onClick="goBlog2" />
 
             <ImageView
                 android:id="@+id/blogs3"
@@ -77,9 +66,24 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/exercises"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="30dp"
+                android:onClick="goBlog3" />
+
+            <ImageView
+                android:id="@+id/blogs4"
+                android:layout_width="319dp"
+                android:layout_height="877dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/portion_control"
                 tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="30dp" />
+                tools:layout_editor_absoluteY="30dp"
+                android:onClick="goBlog4" />
 
         </LinearLayout>
     </ScrollView>

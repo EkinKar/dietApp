@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blogs_and_list_page"
+    android:orientation="vertical"
+    tools:context=".ShowDietPlan">
+
+    <TextView
+        android:id="@+id/blog2Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="Is Your Diet Really Healthy?  10 Quick Tips to Eat Better"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/blog2Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/blogText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text=" If you're incorporating plenty of fruits, vegetables, lean protein, complex carbs and whole grains into your diet, you probably think you're eating a well-rounded diet.  There's a solid chance that may be true! But, a recent study published in the American Society for Nutrition found that many of us think our diet is healthier than it really is.  Researchers from the U.S. Department of Agriculture surveyed 9,700 participants every two years, asking them to rate their diet quality. It found that about 85% could not assess their diet's quality correctly. What's more, 99% overrated their diet's healthfulness.  Those findings mean that most of us think we're eating healthfully when we are not. That can be problematic, as eating a healthy diet can go a long way towards improving many aspects of your health, including:    Controlling blood sugar. Decreasing blood pressure. Balancing cholesterol levels. Lowering heart disease and stroke risk.  Thankfully, you can take control of your diet and ensure you're getting the proper nutrition that can support you in reaching your goals. Below are 10 quick and simple tips for eating a healthy, well-rounded diet.    1) Get rid of any highly-processed foods.  If you think that bag of dried fruits or the &quot;all-natural&quot; potato chips are good for you, think again. Packaged, factory-processed foods are rarely healthy. Do yourself a favor by removing it from your house.    2) Load up on whole grains.  Not all breads are created equal. Buy whole wheat or whole grain bread instead of white bread to gain benefits that include a reduced risk of diabetes, cancer, heart disease and more.    3) Go for Greek rather than traditional yogurt.  Just because it's yogurt doesn't mean it's healthy. In fact, many varieties of yogurt are loaded with excess sugar that makes them anything but. Greek yogurt has more protein, fewer carbs and less lactose than traditional yogurt, making it a healthier alternative.    4) Use the oven instead of the grill or fryer.  Fried food is a pretty obvious no-no when it comes to healthy eating. But did you know that grilling may also be less than ideal? Grills may have harmful, fatty components left on their grates, making them a less healthy form of cooking than using an oven. In contrast, you can use your oven and stovetop for baking, broiling, steaming, simmering and stewing — all better options.    5) Eat protein for breakfast.  A protein-packed breakfast gives your body slow-burning energy that can keep you full and focused all day long. Eggs are one of the best options for your morning meal. Eating eggs for breakfast may even decrease the number of calories you eat the rest of the day.    6) Cover half your dinner plate with vegetables — and eat them first.  Dinners should typically include lean protein, a complex carbohydrate and plenty of vegetables. In fact, you should aim to cover half your plate with vegetables. When you sit down to eat, try to start with the vegetables. Then, eat the lean protein and end with the complex carbohydrate.    7) Drink water instead of juice or soda.  Beverages like juice and soda are some of the least healthy things you can consume. They typically have very little nutritional value and are loaded with sugar and calories that don't do anything to fill you up or keep you energized. Instead, drink water or sparkling water, which keeps you properly hydrated and can even fill you up, so you don't overeat later!    8) Ensure every grocery store visit includes a shopping list.  Heading to the supermarket without a shopping list is a disaster waiting to happen. If you're unsure what to buy, you are much more likely to plop things into the cart on impulse. And it's likely those items will be less nutritious than items you can add to your list ahead of time. Also, be sure to eat before grocery shopping, as going hungry tends to lead to snack-buying.    9) Dine at home instead of at restaurants.  While eating out occasionally can be a nice treat, try to avoid doing it regularly. Even if you opt for the healthiest choice on the menu, you have yet to determine for sure how the restaurant staff prepared the food. That can lead to excess calories and no explicit knowledge you're getting the nutrition you need.    10) Plan your meals ahead of time.  Taking the time to plot out your meals for the week is a vital part of healthy eating. Meal planning means you know exactly what you're eating each day to ensure you get the proper balance of calories and nutrition. It also helps you avoid poor choices like takeout, drive-thrus, snacking, etc. If you're an especially busy person or unsure how to go about meal prep and planning, you can opt for a healthy meal delivery service like Diet-to-Go.  Diet-to-Go's chef-prepared meals are carefully balanced for portion size, nutrition content, calories and, of course, taste! We'll deliver meals right to your door, meaning all you have to do is heat and eat! "
+                android:textColor="#044E30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
