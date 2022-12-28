@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blogs_and_list_page"
+    android:orientation="vertical"
+    tools:context=".ShowDietPlan">
+
+    <TextView
+        android:id="@+id/blog1Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="Clever Hacks To Help You Get a  Better Night’s Sleep "
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/blog1Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/blogText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="A quality night’s rest is one of the best feelings. It makes it much easier to take on the day’s tasks, make time for exercise, think clearly, be productive and even make better nutrition choices.  There’s a lot of science behind that. One study found that interrupted sleep affects our immune system and increases inflammation. Another concluded that poor sleep quality over time could have detrimental effects on well-being by negatively impacting daily performance, memory, cognitive function and stress levels. Additional research also found that sleep deprivation can lead to chronic disease, including type 2 diabetes, obesity, cardiovascular disease and depression.  Unfortunately, many of us may struggle to get quality sleep. According to the American Sleep Apnea Association, “More than 50 million Americans already suffer from over 80 different sleep disorders and another 20 to 30 million suffer intermittent sleep problems each year.”  If you’re one of those Americans, it’s enough to make you want to tear your hair out when you go day in and day out with less sleep than you need.  With that in mind, we rounded up five clever hacks you can try to get a better night’s sleep. Try a few of these to up the quantity (and quality!) of those zzzzs!    1) Turn off all devices at least 30 minutes before bed.  Research shows that blue light can affect the brain’s production of melatonin, a hormone that makes us drowsy. Commit to putting down the phone and turning off the TV at least half an hour before you lay down to go to sleep. Try something like meditation or reading before bed, activities that are way more likely to cause you to nod off quickly. You can even set an alarm on your phone to remind you it’s time to shut everything down!    2) Add power foods to your diet that promote sleep.  Almonds, oatmeal, fish, bananas — these are just a few of the foods packed with the vitamins and minerals you need to give your body balanced nutrition. Add at least one food that promotes sleep to each meal for a natural way to make getting to sleep easier.    3) Schedule 15 minutes of “anxiety time.”  A spinning mind is a common complaint among those who struggle to fall asleep. When there’s nothing left to think about besides trying to fall asleep, intrusive thoughts can creep in and make an easy descent into dreamland darn near impossible. Shortly before bed, set a 15-minute timer on your phone and sit with your thoughts. Let the wheels spin and take you wherever they want you to go. When the timer goes off, tell yourself that’s it. Doing this consistently will train your mind to shut down when you lay your head on the pillow and close your eyes.    4) Change the bedding.  Believe it or not, struggling to fall asleep may be attributable to something as simple as your sheets and blankets. Using sheets with low thread counts or that have been worn down from years of washing can decrease their ability to retain heat or coolness. Blankets that are too thin can stop you from staying warm at night by decreasing your body temperature and signaling your brain to wake you up. Consider investing in quality sheets and blankets.    5) Get moving!  Research shows that sitting all day is associated with insomnia and other sleep disturbances. Set aside some time to get in light exercise, whether it’s walking, running, cycling or doing yoga. Exercising — even for just 10 minutes daily — can go a long way toward improving your sleep.    Getting that decent night’s sleep consistently is within your grasp if you try one (or all!) of these hacks!"
+                android:textColor="#044E30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

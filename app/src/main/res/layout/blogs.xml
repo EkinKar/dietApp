@@ -39,7 +39,8 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/clever_sleep"
                 tools:layout_editor_absoluteX="46dp"
-                tools:layout_editor_absoluteY="30dp" />
+                tools:layout_editor_absoluteY="30dp"
+                android:onClick="getBlog1Page"/>
 
             <ImageView
                 android:id="@+id/blogs1"
