@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blogs_and_list_page"
+    android:orientation="vertical"
+    tools:context=".ShowDietPlan">
+
+    <TextView
+        android:id="@+id/blog2Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp"
+        android:text="5 Effective Resistance Exercises to Do as You Get Older"
+        android:textAlignment="center"
+        android:textColor="#009A7E"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/blog3Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/blogText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="You’ve probably heard how critical a well-rounded diet and consistent cardiovascular activity are to prolonging your life. And yes, those things are essential — and just as essential is incorporating resistance training into your routine. That’s because muscles naturally tend to lose strength as you get older; effects you can counter by doing things like lifting weights and using resistance bands.  A recent analysis of 16 studies that looked at 480,000 people ages 18-98 found that those who performed muscle strengthening 30-60 minutes per week had:  40% lower risk of premature death. 46% lower risk of heart disease. 28% lower risk of dying from cancer.  And that’s especially true for women. In fact, another 2017 study that followed 30,000 women for 12 years found that those who lifted weights had fewer heart attacks than those who didn’t.  “Every muscle in your body is made up of thousands of muscle fibers just as a rope is made up of many strands,” Dr. Gabe Mirkin wrote in a recent blog post. “Every muscle fiber is innervated by a single nerve fiber. With aging you lose nerves, and when you lose a nerve attached to a muscle fiber, that muscle fiber is lost also.”  Mirkin is a fitness guru, longtime radio host and sports medicine doctor with more than 50 years of practice. He recommends (after checking with your doctor) that you:    Join a gym and learn how to use the stationary equipment. Doing an at-home resistance training program. Hiring a knowledgeable personal trainer who can guide you through at least a few sessions.  “I [also] recommend lifting light weights with more repetitions, because lifting lighter weights many times is less likely to cause injuries than lifting heavier weights a few times,” he wrote.  We gathered 5 extremely effective resistance exercises for middle-aged folks and seniors. Do these at least a few times a week to work towards adding years to your life!    1) Water Aerobics  Exercising in the water is perfect for anyone with achy joints, arthritis or sore muscles. Being in the water puts less stress on your body while simultaneously offering natural resistance. You can use YouTube to find water aerobics exercises you can try on your own. Or, if you’d prefer, you can check with your local recreation center and sign up for a group fitness class. Plus, joining a class can be an excellent way to make new friends and stay motivated!    2) Resistance Band Workouts  These stretchy pieces of rubber may be just the thing if you’re a beginner or looking for a gentler way to strength train without having to lift weights. You can easily purchase a set to use at home by following a trainer on YouTube. Another option is to head to your local gym to use the ones available there with the instruction of a trainer or via your own research. Bonus: Resistance training improves core, posture and flexibility, too!    3) Pilates  Pilates offer a low-impact way to improve your core strength, improve balance and amp up flexibility. They involve using deep breathing and slow, controlled movement to tone muscles. You’ll probably want to join a local pilates class to learn the best techniques. There, you’ll either use a reformer machine or floor mats to perform a wide variety of movements. If the gym really isn’t your thing, try this YouTube video for a guided pilates workout instead.    4) Chair Yoga  Yoga is an excellent way to improve flexibility and stretch our aching muscles. Chair yoga makes the challenging aspects of yoga accessible for seniors by having them perform posture holds and gentle movements while seated. Some recreation centers offer chair yoga classes. YouTube has a great video for those who would rather try on their own at home.    5) High-Rep, Low-Weight Dumbbell Routine  Believe it or not, high-repetition, low-weight dumbbell routines can be just as effective at building muscle as using heavy weights. Plus, they can work well for seniors who want to build muscle around damaged joints and ligaments. If you have dumbbells at home, this YouTube video guides you in a 30-minute routine. You might also head to a gym and work with a personal trainer to create your own unique routine. As with any exercise, it’s vital that you listen to your body and don’t overdo it."
+                android:textColor="#044E30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

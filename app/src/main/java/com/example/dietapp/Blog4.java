@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import java.io.InputStream;
 import java.net.URL;
 
-public class Blog1 extends Activity {
+public class Blog4 extends Activity {
 
     private ImageView imageView;
 
@@ -17,9 +17,9 @@ public class Blog1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_blog1);
+        setContentView(R.layout.activity_blog4);
 
-        imageView = findViewById(R.id.blog1Image);
+        imageView = findViewById(R.id.blog4Image);
 
         // Create and start the background thread
         Thread thread = new Thread(new DownloadImageRunnable());
@@ -32,7 +32,7 @@ public class Blog1 extends Activity {
         public void run() {
             // Download the image
             try {
-                URL url = new URL("https://diettogo.com/data/fe/image/good-night-sleep_HEADER.jpg");
+                URL url = new URL("https://diettogo.com/data/fe/image/portion-control_HEADER.jpg");
 
                 InputStream inputStream = url.openStream();
                 final Bitmap bitmap = BitmapFactory.decodeStream(inputStream);

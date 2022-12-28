@@ -11,17 +11,23 @@ public class Blogs extends Activity {
         setContentView(R.layout.blogs);
     }
 
-    public void getBlog1Page(View v){
+    public void goBlog1(View v){
         startActivity(new Intent(Blogs.this, Blog1.class));
 
     }
-//    public void getBlog2Page(View v){
-//        startActivity(new Intent(Blogs.this, Blog2.class));
-//    }
-//    public void getBlog3Page(View v){
-//        startActivity(new Intent(Blogs.this, Blog3.class));
-//    }
-//    public void getBlog4Page(View v){
-//        startActivity(new Intent(Blogs.this, Blog4.class));
-//    }
+
+    public void goBlog2(View v){
+        startActivity(new Intent(Blogs.this, Blog2.class));
+
+    }
+
+    public void goBlog3(View v){
+        startActivity(new Intent(Blogs.this, Blog3.class));
+
+    }
+
+    public void goBlog4(View v){
+        startActivity(new Intent(Blogs.this, Blog4.class));
+
+    }
 }
