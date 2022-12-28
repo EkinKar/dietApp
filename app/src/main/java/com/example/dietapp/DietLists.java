@@ -15,40 +15,33 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DietLists extends Activity {
-    private boolean mDietsExist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diet_lists);
-        mDietsExist = false;
+
+    }
+    public void myDietList(View v) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference userRef = database.getReference("users").child(userId).child("diets");
-
-        userRef.addValueEventListener(new ValueEventListener() {
+        userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()) {
-                    mDietsExist = true;
+            public void onDataChange(DataSnapshot snapshot) {
+                if (snapshot.exists() && snapshot.getValue() != null) {
+                    startActivity(new Intent(DietLists.this, ShowDietPlan.class));
                 } else {
-                    mDietsExist = false;
+                    Toast.makeText(DietLists.this, "You didn't create a diet plan yet.", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(DietLists.this, CreateDietList.class));
                 }
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(DatabaseError error) {
             }
         });
     }
 
-    public void myDietList(View v) {
-        if (mDietsExist) {
-            startActivity(new Intent(DietLists.this, ShowDietPlan.class));
-        } else {
-            Toast.makeText(DietLists.this, "You didn't create a diet plan yet.", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(DietLists.this, CreateDietList.class));
-        }
-    }
 }
