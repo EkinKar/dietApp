@@ -46,19 +46,26 @@ public class CreateDietList extends AppCompatActivity {
             public View getView(int position, View convertView, ViewGroup parent) {
                 // function that lets us chose the amount of foods
                 View view = super.getView(position, convertView, parent);
+
                 CheckBox checkBoxFood = view.findViewById(R.id.checkBoxFood);
                 TextView textViewFoodName = view.findViewById(R.id.textViewFoodName);
                 NumberPicker numberPickerAmount = view.findViewById(R.id.numberPickerAmount);
+                checkBoxFood.setTag(position);
+                checkBoxFood.setOnCheckedChangeListener(null);
+                numberPickerAmount.setTag(position);
+                numberPickerAmount.setOnValueChangedListener(null);
+
                 Food food = foodList.get(position);
                 checkBoxFood.setChecked(food.isSelected());
                 textViewFoodName.setText(food.getName());
                 numberPickerAmount.setMinValue(1);
                 numberPickerAmount.setMaxValue(5);
                 numberPickerAmount.setValue(1);
+                final int pos = (Integer) checkBoxFood.getTag();
                 checkBoxFood.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                    // function that lets us chose the foods
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                        Food food = foodList.get(pos);
                         food.setSelected(isChecked);
                         if (isChecked) {
                             food.setTotalCalories();
@@ -68,12 +75,16 @@ public class CreateDietList extends AppCompatActivity {
                         }
                     }
                 });
+
+                final int pos2 = (Integer) numberPickerAmount.getTag();
                 numberPickerAmount.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                     @Override
                     public void onValueChange(NumberPicker numberPicker, int oldValue, int newValue) {
+                        Food food = foodList.get(pos2);
                         food.setAmount(newValue);
                     }
                 });
+
 
                 return view;
             }
