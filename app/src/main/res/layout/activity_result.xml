@@ -38,15 +38,15 @@
 
     <ImageView
         android:id="@+id/imageBMIScale"
-        android:layout_width="266dp"
-        android:layout_height="211dp"
+        android:layout_width="316dp"
+        android:layout_height="218dp"
         android:layout_marginBottom="15dp"
+        android:src="@drawable/bmi_calculate"
         app:layout_constraintBottom_toTopOf="@+id/textBMIExplain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textBMIScale"
-        android:src="@drawable/bmi_calculate" />
+        app:layout_constraintTop_toBottomOf="@+id/textBMIScale" />
 
     <TextView
         android:id="@+id/textBMIExplain"
