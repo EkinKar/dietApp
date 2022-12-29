@@ -41,7 +41,7 @@ public class CreateDietList extends AppCompatActivity {
 
         listViewFoods = findViewById(R.id.listViewFoods);
         foodList = new ArrayList<>();
-        adapter = new ArrayAdapter<Food>(this, R.layout.food_item_layout, R.id.textViewFoodName, foodList) {
+        adapter = new ArrayAdapter<Food>(this, R.layout.activity_food_item_layout, R.id.textViewFoodName, foodList) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 // function that lets us chose the amount of foods
