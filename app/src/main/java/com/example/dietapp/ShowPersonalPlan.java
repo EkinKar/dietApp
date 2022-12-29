@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
+// Ekin
 public class ShowPersonalPlan extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference reference;
@@ -28,6 +28,7 @@ public class ShowPersonalPlan extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         Intent intent = getIntent();
         String dietType = intent.getStringExtra("DIET_TYPE");
+        // gets the diet type from intent and finds the right diet plan to show
         reference = database.getReference("diets/" + dietType);
         System.out.println(reference);
         textFoodPersonalized = findViewById(R.id.textFoodPersonalized);

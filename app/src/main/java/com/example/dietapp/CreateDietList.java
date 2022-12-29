@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Ekin
 public class CreateDietList extends AppCompatActivity {
 
     private ListView listViewFoods;
@@ -108,7 +108,7 @@ public class CreateDietList extends AppCompatActivity {
 
         Button buttonSave = findViewById(R.id.buttonSave);
         buttonSave.setOnClickListener(new View.OnClickListener() {
-            // function that saves the selected foods to the db 
+            // function that saves the selected foods to the db
             @Override
             public void onClick(View view) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

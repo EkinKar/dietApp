@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
+// Ekin
 public class DietLists extends Activity {
     String dietType;
     @Override
@@ -36,6 +36,7 @@ public class DietLists extends Activity {
         }
     }
     public void myDietList(View v) {
+        // shows the user's diet if exists, redirects to the create diet list activity otherwise
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -58,6 +59,7 @@ public class DietLists extends Activity {
     }
 
     public void personalDiet(View v) {
+        // shows the personalised diet list
         Intent personalIntent = new Intent(this, ShowPersonalPlan.class);
         personalIntent.putExtra("DIET_TYPE", dietType);
         startActivity(personalIntent);

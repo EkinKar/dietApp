@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+// Ekin
 public class Result extends CalculateBmi {
 
     double bmi;
@@ -46,6 +46,7 @@ public class Result extends CalculateBmi {
     }
 
     public void getDietPlanPage(View v) {
+        //starts the diet lists page with bmi value
         Intent dietIntent = new Intent(this, DietLists.class);
         dietIntent.putExtra("BMI", bmi);
         startActivity(dietIntent);

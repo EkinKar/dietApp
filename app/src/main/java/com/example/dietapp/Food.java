@@ -1,5 +1,5 @@
 package com.example.dietapp;
-
+// Ekin
 public class Food {
     private String name;
     private int calories;
