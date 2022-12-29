@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
+//Mert
 public class SignUp extends Activity {
     public EditText firstNameInput, surnameInput, emailInput, passwordInput;
     public String name, surname, email, password;

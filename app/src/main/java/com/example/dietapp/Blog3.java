@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 import java.io.InputStream;
 import java.net.URL;
-
+//Mert
 public class Blog3 extends Activity {
 
     private ImageView imageView;
