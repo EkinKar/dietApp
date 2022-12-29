@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
+// Ekin
 public class Result extends CalculateBmi {
 
     double bmi;

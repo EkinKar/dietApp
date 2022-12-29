@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Ekin
 public class CreateDietList extends AppCompatActivity {
 
     private ListView listViewFoods;

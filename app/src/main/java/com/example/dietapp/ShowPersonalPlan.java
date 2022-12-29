@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
+// Ekin
 public class ShowPersonalPlan extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference reference;
