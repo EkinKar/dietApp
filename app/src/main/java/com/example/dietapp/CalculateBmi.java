@@ -3,6 +3,7 @@ package com.example.dietapp;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -28,6 +29,10 @@ public class CalculateBmi extends Activity {
     }
 
     public void getResultPage(View v) {
+        if (TextUtils.isEmpty(height_input.getText().toString()) && TextUtils.isEmpty(weight_input.getText().toString())) {
+            Toast.makeText(this, "Please enter your height and weight.", Toast.LENGTH_SHORT).show();
+            return;
+        }
         height = (Double.parseDouble(height_input.getText().toString())) / 100;
         weight = Double.parseDouble(weight_input.getText().toString());
         bmi = calculateBMI(height, weight);
