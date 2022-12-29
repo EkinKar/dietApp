@@ -29,6 +29,7 @@ public class ShowDietPlan extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String userId = user.getUid();
         database = FirebaseDatabase.getInstance();
+        // shows the diet of the user
         reference = database.getReference("users/" + userId + "/diets");
         textFoodPersonalized = findViewById(R.id.textFoodPersonalized);
         textAmountPersonalized = findViewById(R.id.textAmountPersonalized);

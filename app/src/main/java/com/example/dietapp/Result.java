@@ -46,6 +46,7 @@ public class Result extends CalculateBmi {
     }
 
     public void getDietPlanPage(View v) {
+        //starts the diet lists page with bmi value
         Intent dietIntent = new Intent(this, DietLists.class);
         dietIntent.putExtra("BMI", bmi);
         startActivity(dietIntent);

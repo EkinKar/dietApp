@@ -26,8 +26,8 @@ public class SignIn extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signin);
 
-        email_input = (EditText) findViewById(R.id.InputEmailSignIn);
-        password_input = (EditText) findViewById(R.id.InputPasswordSignIn);
+        email_input = findViewById(R.id.InputEmailSignIn);
+        password_input = findViewById(R.id.InputPasswordSignIn);
         mAuth = FirebaseAuth.getInstance();
 
     }
