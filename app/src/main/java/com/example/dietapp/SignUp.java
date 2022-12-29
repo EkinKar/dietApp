@@ -28,7 +28,7 @@ public class SignUp extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sigup);
+        setContentView(R.layout.activity_sing_up);
         firstNameInput = findViewById(R.id.InputNameSignUp);
         surnameInput = findViewById(R.id.InputSurnameSignUp);
         emailInput = findViewById(R.id.InputEmailSignUp);
