@@ -74,8 +74,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".signin" />
-        <activity android:name=".signup" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
         <activity android:name=".MainPage" />
         <activity android:name=".CalculateBmi" />
         <activity android:name=".DietLists" />

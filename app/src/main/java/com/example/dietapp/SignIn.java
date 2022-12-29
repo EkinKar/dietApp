@@ -1,15 +1,11 @@
 package com.example.dietapp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,7 +16,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class signin extends Activity {
+public class SignIn extends Activity {
     EditText email_input, password_input;
     String email, password;
     public FirebaseAuth mAuth;
@@ -45,13 +41,13 @@ public class signin extends Activity {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             mUser = mAuth.getCurrentUser();
-                            startActivity(new Intent(signin.this, MainPage.class));
+                            startActivity(new Intent(SignIn.this, MainPage.class));
                             finish();
                         }
                     }).addOnFailureListener(this, new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(signin.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignIn.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     });
 

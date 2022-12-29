@@ -44,6 +44,7 @@ public class CreateDietList extends AppCompatActivity {
         adapter = new ArrayAdapter<Food>(this, R.layout.food_item_layout, R.id.textViewFoodName, foodList) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
+                // function that lets us chose the amount of foods
                 View view = super.getView(position, convertView, parent);
                 CheckBox checkBoxFood = view.findViewById(R.id.checkBoxFood);
                 TextView textViewFoodName = view.findViewById(R.id.textViewFoodName);
@@ -55,6 +56,7 @@ public class CreateDietList extends AppCompatActivity {
                 numberPickerAmount.setMaxValue(5);
                 numberPickerAmount.setValue(1);
                 checkBoxFood.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    // function that lets us chose the foods
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                         food.setSelected(isChecked);
@@ -78,7 +80,8 @@ public class CreateDietList extends AppCompatActivity {
         };
         listViewFoods.setAdapter(adapter);
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("foods");
-        ref.addValueEventListener(new ValueEventListener() {
+        // function that shows the available foods
+       ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 foodList.clear();
@@ -105,6 +108,7 @@ public class CreateDietList extends AppCompatActivity {
 
         Button buttonSave = findViewById(R.id.buttonSave);
         buttonSave.setOnClickListener(new View.OnClickListener() {
+            // function that saves the selected foods to the db 
             @Override
             public void onClick(View view) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

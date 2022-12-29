@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,10 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void signInPage(View v){
-        startActivity(new Intent(MainActivity.this, signin.class));
+        startActivity(new Intent(MainActivity.this, SignIn.class));
     }
     public void signUpPage(View v){
-        startActivity(new Intent(MainActivity.this, signup.class));
+        startActivity(new Intent(MainActivity.this, SignUp.class));
 
     }
 }
