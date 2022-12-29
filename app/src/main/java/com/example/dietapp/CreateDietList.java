@@ -1,5 +1,6 @@
 package com.example.dietapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -115,6 +116,7 @@ public class CreateDietList extends AppCompatActivity {
                         public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
                             if (databaseError == null) {
                                 Toast.makeText(CreateDietList.this, "Foods saved to database.", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(CreateDietList.this, ShowDietPlan.class));
                             } else {
                                 Toast.makeText(CreateDietList.this, "Error saving foods to database.", Toast.LENGTH_SHORT).show();
                             }

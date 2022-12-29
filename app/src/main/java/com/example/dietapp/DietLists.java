@@ -15,12 +15,25 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class DietLists extends Activity {
-
+    String dietType;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diet_lists);
+        Intent dietIntent = getIntent();
+        double bmi = dietIntent.getDoubleExtra("BMI", 0.0);
 
+        if (bmi < 18.5) {
+            dietType = "diet1";
+        } else if (bmi < 25) {
+            dietType = "diet2";
+        } else if (bmi < 30) {
+            dietType = "diet3";
+        } else if (bmi < 35) {
+            dietType = "diet4";
+        } else {
+            dietType = "diet5";
+        }
     }
     public void myDietList(View v) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -44,4 +57,9 @@ public class DietLists extends Activity {
         });
     }
 
+    public void personalDiet(View v) {
+        Intent personalIntent = new Intent(this, ShowPersonalPlan.class);
+        personalIntent.putExtra("DIET_TYPE", dietType);
+        startActivity(personalIntent);
+    }
 }

@@ -60,6 +60,7 @@ public class signup extends Activity {
                                         .build();
                                 user.updateProfile(profileUpdates);
                                 startActivity(new Intent(signup.this, signin.class));
+                                finish();
                             }
                             else {
                                 Toast.makeText(signup.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();

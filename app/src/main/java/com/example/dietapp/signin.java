@@ -46,6 +46,7 @@ public class signin extends Activity {
                         public void onSuccess(AuthResult authResult) {
                             mUser = mAuth.getCurrentUser();
                             startActivity(new Intent(signin.this, MainPage.class));
+                            finish();
                         }
                     }).addOnFailureListener(this, new OnFailureListener() {
                         @Override
