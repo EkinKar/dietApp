@@ -8,7 +8,7 @@ import android.view.View;
 public class MainPage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_page);
+        setContentView(R.layout.activity_main_page);
 
     }
 

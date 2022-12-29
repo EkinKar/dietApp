@@ -19,7 +19,7 @@ public class DietLists extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.diet_lists);
+        setContentView(R.layout.activity_diet_lists);
         Intent dietIntent = getIntent();
         double bmi = dietIntent.getDoubleExtra("BMI", 0.0);
 

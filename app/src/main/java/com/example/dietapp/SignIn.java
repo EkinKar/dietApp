@@ -24,7 +24,7 @@ public class SignIn extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signin);
+        setContentView(R.layout.activity_sign_in);
 
         email_input = findViewById(R.id.InputEmailSignIn);
         password_input = findViewById(R.id.InputPasswordSignIn);
